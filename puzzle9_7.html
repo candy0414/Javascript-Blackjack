@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Blackjack Game</title>
+<link href="assets/bootstrap.min.css" rel="stylesheet">
+<link href="assets/style.css" rel="stylesheet">
+<script src="assets/jquery.js"></script>
+<script src="assets/blackjack.js"></script>
+</head>
+<body>
+    <h1 style="margin-top:150px; margin-bottom: 50px">BlackJack Game</h1>
+	<div class='content'>
+
+        <div class='dealer-cards'>
+            
+            <div class='card card1'></div>
+            
+            <div class='card flipped card2'></div>
+            
+            <div class='new-cards'></div>
+            
+            <div class='clear'></div>
+            
+            <div id='dealerTotal' class='dealer-total'></div>
+            
+        </div>
+        
+        <div class='clear'></div>
+
+        <div style="width: 100%">
+            <div style="text-align:center; float:left">
+                <b>Hands Won :</b>
+                <span id='playerwin' class='money'>0</span>
+                <br />
+                <b>Amount($) :</b>
+                <span id='money' class='money'>1000</span>
+            </div>
+            <div style="text-align: center; float: right">
+                <b>Hands Lost :</b>
+                <span id='playerlose' class='money'>0</span>
+                <br />
+                <b>Bet($) :</b>
+                <span id='betpresent' class='money'>0</span>
+            </div>
+        </div>
+        <div class='player-cards'>
+            
+            <div class='card flipped card1'></div>
+            
+            <div class='card flipped card2'></div>
+        	
+            <div class='new-cards'></div>
+            
+        	<div class='clear'></div>
+            
+            <div id='playerTotal' class='player-total'></div>
+            
+        </div>
+        <div class='player-othercards' style="display: none">
+            
+            <div class='card card1'></div>
+            
+            <div class='card card2'></div>
+            
+            <div class='new-cards'></div>
+            
+            <div class='clear'></div>
+            
+            <div id='playerotherTotal' class='player-total'></div>
+            
+        </div>
+        <div class='buttons'>
+        	<div class='btn' id='hit'>Hit</div>
+        	<div class='btn' id='stand'>Stand</div>
+            <div class='btn' id='double'>Double</div>
+            <div class='btn' id='split'>Split</div>
+    	</div><br>
+        <div class="btn col-xs-6 col-md-6" id="restart" style="float:left">New Game</div>
+        <div class="btn col-xs-6 col-md-6" id="reset" style="float:right">Reset</div>
+        <div class='betting-area'>
+            <b>Your Bet</b><br />
+            <div id='bet' class='bet money'>0</div>
+            
+            <div>
+                <div class='btn' id='more'>+</div>
+                <div class='btn' id='less'>-</div>
+                <div class='btn' id='submitt'>Deal</div>
+            </div>
+            <div class='clear'></div>
+        </div><br><br>
+
+        <div id='message' class='message'></div>
+    </div>
+</body>
+</html> 
